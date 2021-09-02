@@ -1,17 +1,26 @@
 <template>
   <div id="nav">
-    <router-view></router-view>
+    <config-provider>
+      <router-view></router-view>
+    </config-provider>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 import { ConfigProvider } from "ant-design-vue";
+// import enUS from "ant-design-vue/es/locale/en_US";
 export default defineComponent({
   name: "App",
   components: {
     ConfigProvider
   }
+  // setup() {
+  //   const locale : any = enUS
+  //   return {
+  //     locale
+  //   }
+  // }
 })
 </script>
 
