@@ -1,26 +1,29 @@
-import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router";
-import Dashboard from "../views/dashboard/index.vue";
+import type {createRouter, createWebHashHistory, RouteRecordRaw} from 'vue-router';
+import type {App} from 'vue';
 
-const routes: Array<RouteRecordRaw> = [
-  {
-    path: "/",
-    name: "Dashboard",
-    component: Dashboard,
-  },
-  {
-    path: "/about",
-    name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue"),
-  },
-];
+// import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router";
+// import Dashboard from "../views/dashboard/index.vue";
 
-const router = createRouter({
-  history: createWebHashHistory(),
-  routes,
-});
+// const routes: Array<RouteRecordRaw> = [
+//   {
+//     path: "/",
+//     name: "Dashboard",
+//     component: Dashboard,
+//   },
+//   {
+//     path: "/about",
+//     name: "About",
+//     // route level code-splitting
+//     // this generates a separate chunk (about.[hash].js) for this route
+//     // which is lazy-loaded when the route is visited.
+//     component: () =>
+//       import(/* webpackChunkName: "about" */ "../views/About.vue"),
+//   },
+// ];
 
-export default router;
+// const router = createRouter({
+//   history: createWebHashHistory(),
+//   routes,
+// });
+
+// export default router;
