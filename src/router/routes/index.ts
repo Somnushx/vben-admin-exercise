@@ -31,7 +31,7 @@ export const LoginRoute: AppRouteRecordRaw = {
   path: '/login',
   name: 'Login',
   component: () => import('/@/views/sys/login/Login.vue'),
-  meta:{
+  meta: {
     title: t('routes.basic.login')
   }
 }
